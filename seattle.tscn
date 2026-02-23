@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://dvftk80ilc07w"]
+
+[ext_resource type="Texture2D" uid="uid://w8j4lpj1qxrx" path="res://assets/sprites/Cop_Idle_L/Cop_Idle_L_0.png" id="1_ocxj3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2tn77"]
+radius = 11.0
+height = 42.0
+
+[sub_resource type="Animation" id="Animation_ocxj3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_bdolc"]
+resource_name = "idle_L"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 0, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rmy8y"]
+_data = {
+&"RESET": SubResource("Animation_ocxj3"),
+&"idle_L": SubResource("Animation_bdolc")
+}
+
+[node name="Seattle" type="Node2D" unique_id=693904137]
+
+[node name="Cop" type="CharacterBody2D" parent="." unique_id=660641038]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cop" unique_id=1404305391]
+position = Vector2(178.5, 103.5)
+shape = SubResource("CapsuleShape2D_2tn77")
+
+[node name="Sprite2D" type="Sprite2D" parent="Cop" unique_id=139585929]
+position = Vector2(178.5, 102.5)
+
+[node name="CopIdleL0" type="Sprite2D" parent="Cop" unique_id=200122863]
+texture_filter = 1
+position = Vector2(178.5, 102.5)
+texture = ExtResource("1_ocxj3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Cop" unique_id=248930036]
+libraries/ = SubResource("AnimationLibrary_rmy8y")

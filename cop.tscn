@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ddfdgxcm1isup"]
+
+[ext_resource type="Texture2D" uid="uid://w8j4lpj1qxrx" path="res://assets/sprites/Cop_Idle_L/Cop_Idle_L_0.png" id="1_awkge"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2tn77"]
+radius = 11.0
+height = 42.0
+
+[node name="Cop" type="CharacterBody2D" unique_id=841908597]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=874029524]
+position = Vector2(178.5, 103.5)
+shape = SubResource("CapsuleShape2D_2tn77")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=608498327]
+position = Vector2(178.5, 102.5)
+
+[node name="CopIdleL0" type="Sprite2D" parent="." unique_id=1651554732]
+texture_filter = 1
+position = Vector2(178.5, 102.5)
+texture = ExtResource("1_awkge")
