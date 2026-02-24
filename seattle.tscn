@@ -1,46 +1,176 @@
 [gd_scene format=3 uid="uid://dvftk80ilc07w"]
 
-[ext_resource type="Texture2D" uid="uid://w8j4lpj1qxrx" path="res://assets/sprites/Cop_Idle_L/Cop_Idle_L_0.png" id="1_ocxj3"]
+[ext_resource type="Texture2D" uid="uid://dcdcqyqapotsr" path="res://assets/sprites/Cop_Idle_L/Cop_Idle_L_6.png" id="1_o81k2"]
+[ext_resource type="Texture2D" uid="uid://c8t3jkh7a72px" path="res://assets/sprites/Cop_Idle_L/Cop_Idle_L_1.png" id="2_dof56"]
+[ext_resource type="Texture2D" uid="uid://c8gkrrrovguw7" path="res://assets/sprites/Cop_Idle_L/Cop_Idle_L_5.png" id="3_u1q1h"]
+[ext_resource type="Texture2D" uid="uid://dqcw1wkno6wlt" path="res://assets/sprites/Cop_Idle_L/Cop_Idle_L_4.png" id="4_twuvr"]
+[ext_resource type="Texture2D" uid="uid://cbtyk23enmkq7" path="res://assets/sprites/Cop_Idle_L/Cop_Idle_L_3.png" id="5_iobqh"]
+[ext_resource type="Texture2D" uid="uid://cwokcokwhadpl" path="res://assets/sprites/Cop_Idle_R/Cop_Idle_R_0.png" id="6_y52xn"]
+[ext_resource type="Texture2D" uid="uid://deohhvt0pss24" path="res://assets/sprites/Cop_Idle_R/Cop_Idle_R_1.png" id="7_qxycb"]
+[ext_resource type="Texture2D" uid="uid://b2cx58v6l2u18" path="res://assets/sprites/Cop_Idle_R/Cop_Idle_R_5.png" id="8_ublno"]
+[ext_resource type="Texture2D" uid="uid://bym44xs502l8n" path="res://assets/sprites/Cop_Idle_R/Cop_Idle_R_2.png" id="9_8ba61"]
+[ext_resource type="Texture2D" uid="uid://cffypyw5xawt2" path="res://assets/sprites/Cop_Idle_R/Cop_Idle_R_4.png" id="10_h81hi"]
+[ext_resource type="Texture2D" uid="uid://cditc6gida3sm" path="res://assets/sprites/Cop_Idle_R/Cop_Idle_R_3.png" id="11_jnipq"]
+[ext_resource type="Texture2D" uid="uid://b57jy5pvhb4h4" path="res://assets/sprites/CopRunR/CopRunR_0.png" id="12_yf7cy"]
+[ext_resource type="Texture2D" uid="uid://igiak8anvx52" path="res://assets/sprites/CopRunR/CopRunR_1.png" id="13_ng0f4"]
+[ext_resource type="Texture2D" uid="uid://bso28w0dtxtis" path="res://assets/sprites/CopRunR/CopRunR_2.png" id="14_egna1"]
+[ext_resource type="Texture2D" uid="uid://bpy08iysw4e2k" path="res://assets/sprites/CopRunR/CopRunR_3.png" id="15_2vdjd"]
+[ext_resource type="Texture2D" uid="uid://dwcipj0r42p24" path="res://assets/sprites/CopRunR/CopRunR_4.png" id="16_npdch"]
+[ext_resource type="Texture2D" uid="uid://ccc8lqweagmrn" path="res://assets/sprites/CopRunR/CopRunR_5.png" id="17_5ih0o"]
+[ext_resource type="Texture2D" uid="uid://dpp6svmb6kkwm" path="res://assets/sprites/CopRunR/CopRunR_6.png" id="18_wg30s"]
+[ext_resource type="Texture2D" uid="uid://dhhrcrb4vbir6" path="res://assets/sprites/CopRunR/CopRunR_7.png" id="19_gc5hd"]
+[ext_resource type="Texture2D" uid="uid://bjm1vqb0d72qy" path="res://assets/sprites/CopRunL/CopRunL_0.png" id="20_10pc7"]
+[ext_resource type="Texture2D" uid="uid://dtfogb53rmyty" path="res://assets/sprites/CopRunL/CopRunL_1.png" id="21_qk0ro"]
+[ext_resource type="Texture2D" uid="uid://xx7cjoacbeks" path="res://assets/sprites/CopRunL/CopRunL_2.png" id="22_ttt5x"]
+[ext_resource type="Texture2D" uid="uid://c32cecjtnbcp7" path="res://assets/sprites/CopRunL/CopRunL_3.png" id="23_5vul8"]
+[ext_resource type="Texture2D" uid="uid://cgtyuxh3oj31k" path="res://assets/sprites/CopRunL/CopRunL_4.png" id="24_8la37"]
+[ext_resource type="Texture2D" uid="uid://1w7uu0tifonp" path="res://assets/sprites/CopRunL/CopRunL_5.png" id="25_882yu"]
+[ext_resource type="Texture2D" uid="uid://7luofx25c5cg" path="res://assets/sprites/CopRunL/CopRunL_6.png" id="26_qiscd"]
+[ext_resource type="Texture2D" uid="uid://bdpkjeq7uee6e" path="res://assets/sprites/CopRunL/CopRunL_7.png" id="27_fckfj"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2tn77"]
 radius = 11.0
 height = 42.0
 
-[sub_resource type="Animation" id="Animation_ocxj3"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
+[sub_resource type="SpriteFrames" id="SpriteFrames_suqfo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_o81k2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_dof56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_dof56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_u1q1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_u1q1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_twuvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_twuvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_iobqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_twuvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_u1q1h")
+}],
+"loop": true,
+"name": &"idle_l",
+"speed": 1.95
+}]
 
-[sub_resource type="Animation" id="Animation_bdolc"]
-resource_name = "idle_L"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.23333333, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [0, 0, 0]
-}
+[sub_resource type="SpriteFrames" id="SpriteFrames_nbcka"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_y52xn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qxycb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qxycb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ublno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ublno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8ba61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_h81hi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jnipq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_h81hi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ublno")
+}],
+"loop": true,
+"name": &"idle_r",
+"speed": 2.0
+}]
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_rmy8y"]
-_data = {
-&"RESET": SubResource("Animation_ocxj3"),
-&"idle_L": SubResource("Animation_bdolc")
-}
+[sub_resource type="SpriteFrames" id="SpriteFrames_c5f60"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_yf7cy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ng0f4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_egna1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2vdjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_npdch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_5ih0o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_wg30s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_gc5hd")
+}],
+"loop": true,
+"name": &"Run_r",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1jio8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_10pc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_qk0ro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ttt5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_5vul8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_8la37")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_882yu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_qiscd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_fckfj")
+}],
+"loop": true,
+"name": &"Run_l",
+"speed": 5.0
+}]
 
 [node name="Seattle" type="Node2D" unique_id=693904137]
 
@@ -50,13 +180,29 @@ _data = {
 position = Vector2(178.5, 103.5)
 shape = SubResource("CapsuleShape2D_2tn77")
 
-[node name="Sprite2D" type="Sprite2D" parent="Cop" unique_id=139585929]
-position = Vector2(178.5, 102.5)
+[node name="idle_l" type="AnimatedSprite2D" parent="Cop" unique_id=986800190]
+sprite_frames = SubResource("SpriteFrames_suqfo")
+animation = &"idle_l"
+frame = 7
+frame_progress = 0.7681832
 
-[node name="CopIdleL0" type="Sprite2D" parent="Cop" unique_id=200122863]
-texture_filter = 1
-position = Vector2(178.5, 102.5)
-texture = ExtResource("1_ocxj3")
+[node name="idle_r" type="AnimatedSprite2D" parent="Cop" unique_id=2035915956]
+position = Vector2(69, -3)
+sprite_frames = SubResource("SpriteFrames_nbcka")
+animation = &"idle_r"
+frame = 7
+frame_progress = 0.17080717
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Cop" unique_id=248930036]
-libraries/ = SubResource("AnimationLibrary_rmy8y")
+[node name="Run_r" type="AnimatedSprite2D" parent="Cop" unique_id=604953638]
+position = Vector2(-74, 2)
+sprite_frames = SubResource("SpriteFrames_c5f60")
+animation = &"Run_r"
+frame = 2
+frame_progress = 0.32581106
+
+[node name="Run_l" type="AnimatedSprite2D" parent="Cop" unique_id=2132437130]
+position = Vector2(-32, -40)
+sprite_frames = SubResource("SpriteFrames_1jio8")
+animation = &"Run_l"
+frame = 6
+frame_progress = 0.9006283
