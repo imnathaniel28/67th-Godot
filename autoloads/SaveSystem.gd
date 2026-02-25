@@ -129,7 +129,7 @@ func load_player(peer_id: int) -> Dictionary:
 	var content := file.get_as_text()
 	file.close()
 
-	var parsed := JSON.parse_string(content)
+	var parsed = JSON.parse_string(content)
 	if parsed == null:
 		push_error("SaveSystem: failed to parse JSON from %s" % path)
 		return {}

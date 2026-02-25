@@ -7,7 +7,6 @@ radius = 11.0
 height = 42.0
 
 [node name="Cop" type="CharacterBody2D" unique_id=841908597]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=874029524]
 position = Vector2(178.5, 103.5)

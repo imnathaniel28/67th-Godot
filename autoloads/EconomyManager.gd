@@ -65,7 +65,7 @@ func process_sale(seller_peer_id: int, drug_type: int) -> Dictionary:
 	# Sync economy state back to the client
 	sync_economy_to_client(seller_peer_id)
 
-	var drug_name := DRUG_NAMES.get(drug_type, "drugs")
+	var drug_name = DRUG_NAMES.get(drug_type, "drugs")
 	emit_signal("sale_completed", seller_peer_id, drug_name, amount)
 	return {"success": true, "amount": amount, "reason": "ok"}
 

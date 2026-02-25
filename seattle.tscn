@@ -27,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://1w7uu0tifonp" path="res://assets/sprites/CopRunL/CopRunL_5.png" id="25_882yu"]
 [ext_resource type="Texture2D" uid="uid://7luofx25c5cg" path="res://assets/sprites/CopRunL/CopRunL_6.png" id="26_qiscd"]
 [ext_resource type="Texture2D" uid="uid://bdpkjeq7uee6e" path="res://assets/sprites/CopRunL/CopRunL_7.png" id="27_fckfj"]
+[ext_resource type="Script" uid="uid://hq2ksuq00r1k" path="res://scripts/player/CopPlayer.gd" id="28_cop_script"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2tn77"]
 radius = 11.0
@@ -67,7 +68,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle_l",
-"speed": 1.95
+"speed": 3.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nbcka"]
@@ -175,33 +176,30 @@ animations = [{
 [node name="Seattle" type="Node2D" unique_id=693904137]
 
 [node name="Cop" type="CharacterBody2D" parent="." unique_id=660641038]
+script = ExtResource("28_cop_script")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cop" unique_id=1404305391]
-position = Vector2(178.5, 103.5)
+position = Vector2(-2, 5)
 shape = SubResource("CapsuleShape2D_2tn77")
 
 [node name="idle_l" type="AnimatedSprite2D" parent="Cop" unique_id=986800190]
 sprite_frames = SubResource("SpriteFrames_suqfo")
 animation = &"idle_l"
-frame = 7
-frame_progress = 0.7681832
+frame_progress = 0.22625478
 
 [node name="idle_r" type="AnimatedSprite2D" parent="Cop" unique_id=2035915956]
-position = Vector2(69, -3)
 sprite_frames = SubResource("SpriteFrames_nbcka")
 animation = &"idle_r"
 frame = 7
 frame_progress = 0.17080717
 
 [node name="Run_r" type="AnimatedSprite2D" parent="Cop" unique_id=604953638]
-position = Vector2(-74, 2)
 sprite_frames = SubResource("SpriteFrames_c5f60")
 animation = &"Run_r"
 frame = 2
 frame_progress = 0.32581106
 
 [node name="Run_l" type="AnimatedSprite2D" parent="Cop" unique_id=2132437130]
-position = Vector2(-32, -40)
 sprite_frames = SubResource("SpriteFrames_1jio8")
 animation = &"Run_l"
 frame = 6
