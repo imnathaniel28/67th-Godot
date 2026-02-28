@@ -1,0 +1,1 @@
+scr_resolve_pvp();
